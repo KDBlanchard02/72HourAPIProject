@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourAPIProject", "72HourAPIProject\72HourAPIProject.csproj", "{C4A7065E-A466-40F9-AD81-66746560C4FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeventyTwoHourAPIProject", "72HourAPIProject\SeventyTwoHourAPIProject.csproj", "{C4A7065E-A466-40F9-AD81-66746560C4FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourAPIProject.Data", "72HourAPIProject.Data\72HourAPIProject.Data.csproj", "{BCCAB99F-5FF1-4B31-8E0A-0B0579146A0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeventyTwoHourAPIProject.Data", "72HourAPIProject.Data\SeventyTwoHourAPIProject.Data.csproj", "{BCCAB99F-5FF1-4B31-8E0A-0B0579146A0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourAPIProject.Models", "72HourAPIProject.Models\72HourAPIProject.Models.csproj", "{8CF97759-2810-46F3-93B8-48B913106965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeventyTwoHourAPIProject.Models", "72HourAPIProject.Models\SeventyTwoHourAPIProject.Models.csproj", "{8CF97759-2810-46F3-93B8-48B913106965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourAPIProject.Services", "72HourAPIProject.Services\72HourAPIProject.Services.csproj", "{49775E0E-7F63-40E3-AB1E-B9381BC7E969}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeventyTwoHourAPIProject.Services", "72HourAPIProject.Services\SeventyTwoHourAPIProject.Services.csproj", "{49775E0E-7F63-40E3-AB1E-B9381BC7E969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
