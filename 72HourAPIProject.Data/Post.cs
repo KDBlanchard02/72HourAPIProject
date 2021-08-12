@@ -17,8 +17,9 @@ namespace _72HourAPIProject.Data
 
         [Required]
         public string Content { get; set; }
-        //[Required]
-        //public virtual List<Comments>
+        
+        [Required]
+        public virtual List<Comment> Comments { get; set; }
 
         //[ForeignKey]
         // (nameof(Like))]

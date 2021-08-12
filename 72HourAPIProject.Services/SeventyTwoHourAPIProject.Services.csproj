@@ -85,21 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PostService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\72HourAPIProject.Data\SeventyTwoHourAPIProject.Data.csproj">
-      <Project>{BCCAB99F-5FF1-4B31-8E0A-0B0579146A0A}</Project>
-      <Name>SeventyTwoHourAPIProject.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\72HourAPIProject.Models\SeventyTwoHourAPIProject.Models.csproj">
-      <Project>{8cf97759-2810-46f3-93b8-48b913106965}</Project>
-      <Name>SeventyTwoHourAPIProject.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
