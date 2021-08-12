@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReplyController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -307,6 +308,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\72HourAPIProject.Models\72HourAPIProject.Models.csproj">
+      <Project>{8CF97759-2810-46F3-93B8-48B913106965}</Project>
+      <Name>72HourAPIProject.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\72HourAPIProject.Services\72HourAPIProject.Services.csproj">
+      <Project>{49775E0E-7F63-40E3-AB1E-B9381BC7E969}</Project>
+      <Name>72HourAPIProject.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

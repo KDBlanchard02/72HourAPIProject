@@ -14,7 +14,7 @@ namespace _72HourAPIProject.Data
         public int Id { get; set; }
 
         [ForeignKey(nameof(Comment))]
-        public int CommendId { get; set; }
+        public int CommentId { get; set; }
 
         [Required]
         public Guid AuthorId { get; set; }
@@ -22,6 +22,5 @@ namespace _72HourAPIProject.Data
         public string Text { get; set; }
 
         public virtual Comment comment { get; set; }
-
     }
 }
