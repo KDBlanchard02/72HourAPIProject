@@ -44,7 +44,7 @@ namespace _72HourAPIProject.Services
                          e =>
                                 new ReplyListItem
                                 { 
-                                    ReplyId = e.Id,
+                                    ReplyId = e.ReplyId,
                                     Text = e.Text,
                                     CreatedUtc = e.CreatedUtc
                                 }
