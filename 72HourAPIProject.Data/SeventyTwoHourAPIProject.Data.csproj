@@ -89,5 +89,13 @@
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+	<ItemGroup>
+		<Compile Include="IdentityModels.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+	</ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
