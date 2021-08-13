@@ -402,13 +402,11 @@
     <Content Include="Scripts\jquery-3.6.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\72HourAPIProject.Models\SeventyTwoHourAPIProject.Models.csproj">
+    <ProjectReference Include="..\72HourAPIProject.Models\_72HourAPIProject.Models.csproj"></ProjectReference>
       <Project>{8CF97759-2810-46F3-93B8-48B913106965}</Project>
       <Name>SeventyTwoHourAPIProject.Models</Name>
-    </ProjectReference>
-	  <ProjectReference Include="..\72HourAPIProject.Services\SeventyTwoHourAPIProject.Services.csproj">
+	  <ProjectReference Include="..\72HourAPIProject.Services\_72HourAPIProject.Services.csproj"></ProjectReference>
       <Project>{49775E0E-7F63-40E3-AB1E-B9381BC7E969}</Project>
-	  </ProjectReference>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <ItemGroup>
