@@ -3,10 +3,8 @@ using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
-<<<<<<< HEAD
 using _72HourAPIProject.Data;
-=======
->>>>>>> 9ff1e5db13b8d8a6ca7d52fb78d65fcbc605b58f
+
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -37,13 +35,11 @@ namespace SeventyTwoHourAPIProject.Data
             return new ApplicationDbContext();
         }
 
-<<<<<<< HEAD
         public DbSet<Post> Posts  { get; set; }
 
         public DbSet<Comment> Comments { get; set; }
-=======
-        // public DbSet<>  { get; set; }
->>>>>>> 9ff1e5db13b8d8a6ca7d52fb78d65fcbc605b58f
+
+        public DbSet<Reply> Replies { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -70,11 +66,8 @@ namespace SeventyTwoHourAPIProject.Data
     {
         public IdentityUserRoleConfiguration()
         {
-<<<<<<< HEAD
             HasKey(iur => iur.UserId);
-=======
             HasKey(iul => iul.UserId);
->>>>>>> 9ff1e5db13b8d8a6ca7d52fb78d65fcbc605b58f
         }
     }
 }
