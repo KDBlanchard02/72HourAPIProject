@@ -56,7 +56,7 @@ namespace _72HourAPIProject.Services
 
             }
         }
-        public PostDetail GetNoteById(int id)
+        public PostDetail GetPostByAuthorId(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
