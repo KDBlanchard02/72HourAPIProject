@@ -22,7 +22,7 @@ namespace _72HourAPIProject.Data
         public virtual List<Reply> Replies { get; set; }
 
         [Required]
-        [ForeignKey("Post")]
+        [ForeignKey(nameof(Post))]
         public virtual Post Post { get; set; }
 
 
