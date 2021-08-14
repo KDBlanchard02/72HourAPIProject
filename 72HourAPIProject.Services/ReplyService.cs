@@ -1,5 +1,6 @@
 ﻿using _72HourAPIProject.Data;
 using _72HourAPIProject.Models;
+using SeventyTwoHourAPIProject.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace _72HourAPIProject.Services
                 };
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Reply.Add(entity);
+                ctx.Replies.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
@@ -46,7 +47,7 @@ namespace _72HourAPIProject.Services
                                 { 
                                     ReplyId = e.ReplyId,
                                     Text = e.Text,
-                                    CreatedUtc = e.CreatedUtc
+                                    //CreatedUtc = e.CreatedUtc
                                 }
                          );
                 return query.ToArray();
