@@ -1,8 +1,11 @@
-﻿using _72HourAPIProject.Models;
+﻿using _72HourAPIProject.Data;
+using _72HourAPIProject.Models;
 using _72HourAPIProject.Services;
 using Microsoft.AspNet.Identity;
+using SeventyTwoHourAPIProject.Data;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -12,6 +15,7 @@ namespace _72HourAPIProject.Controllers
 {
     public class CommentController : ApiController
     {
+        private readonly ApplicationDbContext _context = new ApplicationDbContext();
         private CommentService CreateCommentService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
@@ -19,7 +23,7 @@ namespace _72HourAPIProject.Controllers
             return commentService;
         }
 
-        //post comment
+        [HttpPost]
         public IHttpActionResult Post(CommentCreate model)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -30,8 +34,8 @@ namespace _72HourAPIProject.Controllers
 
             return Ok();
         }
-        //get comments by post id
 
+        [HttpGet]
         public IHttpActionResult Get(int id)
         {
             CommentService commentService = CreateCommentService();
