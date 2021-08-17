@@ -22,5 +22,10 @@ namespace _72HourAPIProject.Data
         public string Text { get; set; }
 
         public virtual Comment comment { get; set; }
+
+        [Required]
+        [Display(Name = "Date Created")]
+        public DateTimeOffset CreatedUtc { get; set; }
+
     }
 }

@@ -4,6 +4,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using _72HourAPIProject.Data;
+
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -39,6 +40,8 @@ namespace SeventyTwoHourAPIProject.Data
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Reply> Replies { get; set; }
 
+        public DbSet<Reply> Replies { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -65,6 +68,7 @@ namespace SeventyTwoHourAPIProject.Data
         public IdentityUserRoleConfiguration()
         {
             HasKey(iur => iur.UserId);
+            HasKey(iul => iul.UserId);
         }
     }
 }
